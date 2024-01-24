@@ -1,5 +1,5 @@
-import {Text} from 'react-native';
+import Yarnig from './src/Yarnig';
 
 export default function App() {
-  return <Text>Goodbye, world.</Text>;
+  return <Yarnig />;
 }
