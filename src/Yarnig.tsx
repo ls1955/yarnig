@@ -1,5 +1,17 @@
-import {Text} from 'react-native';
+import {ImageURISource, Modal, StyleSheet, Text, View} from 'react-native';
 
-export default function Yarnig() {
-  return <Text>Goodbye, world</Text>;
+type Props = {
+  images: ImageURISource[];
+};
+
+export default function Yarnig({images}: Props) {
+  return (
+    <Modal animationType="fade" hardwareAccelerated>
+      <View style={styles.container}></View>
+    </Modal>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {flex: 1, backgroundColor: '#000'},
+});
